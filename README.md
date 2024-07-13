@@ -7,7 +7,7 @@ pip install ToPython
 
 ```
 #Check the email it is linked to Instagram or not 
-
+```python
 from ToPython import Instagram
 
 check = Instagram.CheckEmail("Your Email +@")
@@ -16,7 +16,7 @@ if check == True:
     print("Valid Email")
 else:
     print("Invalid Email")
-    
+  ```  
 
 # Instagram Login (Email-passwod , Username-password , Phone-password)
 
