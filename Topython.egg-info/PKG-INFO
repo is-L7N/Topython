@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: Topython
+Version: 0.3
+Summary: Best library to check Instagram applications
+Home-page: https://t.me/Topython
+Author: L7N Iraqi
+Author-email: l7npypi@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+
+
+```bash
+pip install ToPython
+
+```bash
+#Check the email it is linked to Instagram or not 
+
+from ToPython import Instagram
+
+check = Instagram.CheckEmail("Your Email +@")
+
+if check == True:
+    print("Valid Email")
+else:
+    print("Invalid Email")
+    
+
+# Instagram Login (Email-passwod , Username-password , Phone-password)
+
+from ToPython import Instagram
+
+check = Instagram.Login("Your Email-Username","Your Password")
+
+if check == True :
+    print("Done Login")
+elif check == False :
+    print("Login failed")
+else :
+    print("ban")        
+
+#Check the Usernames available on Instagram 
+
+from ToPython import Instagram
+
+check = Instagram.CheckUsers("Your Username ")
+
+if check == True :
+    print("Available Username")
+elif check == False :
+    print("Unavailable Username")
+else :
+    print("ban") 
+
+# Fetch specific Instagram account information 
+
+from ToPython import Instagram
+
+info_ig = Instagram.information("Your Username")
+
+print(info_ig) # Can You Use json
+
+# Send a message to reset your Instagram account password 
+
+from ToPython import Instagram
+
+reset = Instagram.Rests("Email-User") # Email or Username
+
+print(reset) 
+
+# Get Usernames from Instagram 
+
+from ToPython import Instagram
+
+Generate = Instagram.GenUsers()
+if Generate == None:
+    print(None)
+else:
+    print(Generate)
