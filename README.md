@@ -6,7 +6,7 @@ Pip Channel : https://t.me/ToPythonLib
 pip install ToPython
 
 ```
-#Check the email it is linked to Instagram or not 
+# Check the email it is linked to Instagram or not 
 ```python
 from ToPython import Instagram
 
@@ -19,7 +19,7 @@ else:
   ```  
 
 # Instagram Login (Email-passwod , Username-password , Phone-password)
-
+```python
 from ToPython import Instagram
 
 check = Instagram.Login("Your Email-Username","Your Password")
@@ -30,9 +30,9 @@ elif check == False :
     print("Login failed")
 else :
     print("ban")        
-
-#Check the Usernames available on Instagram 
-
+```
+# Check the Usernames available on Instagram 
+```python
 from ToPython import Instagram
 
 check = Instagram.CheckUsers("Your Username ")
@@ -43,25 +43,25 @@ elif check == False :
     print("Unavailable Username")
 else :
     print("ban") 
-
+```
 # Fetch specific Instagram account information 
-
+```python
 from ToPython import Instagram
 
 info_ig = Instagram.information("Your Username")
 
 print(info_ig) # Can You Use json
-
+```
 # Send a message to reset your Instagram account password 
-
+```python
 from ToPython import Instagram
 
 reset = Instagram.Rests("Email-User") # Email or Username
 
 print(reset) 
-
+```
 # Get Usernames from Instagram 
-
+```python
 from ToPython import Instagram
 
 Generate = Instagram.GenUsers()
@@ -69,3 +69,4 @@ if Generate == None:
     print(None)
 else:
     print(Generate)
+```
